@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  rtmp-restreamer:
+    name: restream
+    image: pixelperfect/nginx-rtmp-stunnel:latest
+    ports:
+      - 1935:1935
+    volumes:
+      - ./config:/config # files generated on first run
+    environment:
+      - PGID=100
+      - PUID=65534
