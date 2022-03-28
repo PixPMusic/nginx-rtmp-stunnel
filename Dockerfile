@@ -57,10 +57,6 @@ RUN wget https://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
   rm nginx-${NGINX_VERSION}.tar.gz
 
 # Get nginx-rtmp module.
-#RUN wget https://github.com/arut/nginx-rtmp-module/archive/v${NGINX_RTMP_VERSION}.tar.gz && \
-#  tar zxf v${NGINX_RTMP_VERSION}.tar.gz && \
-#  rm v${NGINX_RTMP_VERSION}.tar.gz
-
 RUN wget https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/archive/${NGINX_RTMP_COMMIT}.tar.gz && \
   tar zxf ${NGINX_RTMP_COMMIT}.tar.gz && rm ${NGINX_RTMP_COMMIT}.tar.gz
 
@@ -123,7 +119,7 @@ RUN rm -rf /var/cache/* /tmp/*
 ##########################
 # Build the release image.
 FROM alpine:3.15.0
-LABEL MAINTAINER Alfred Gutierrez <alf.g.jr@gmail.com>
+LABEL MAINTAINER Pixel Perfect <docker@pixp.cc>
 
 # Set default ports.
 ENV HTTP_PORT 80
