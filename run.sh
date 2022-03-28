@@ -41,7 +41,7 @@ rtmp {
 EOF
 fi
 
-chown -r nobody:users /config
+chown -R nobody:users /config
 cp -r /config/stunnel/* /etc/stunnel/
 cp -r /config/nginx/nginx.conf /etc/nginx/nginx.conf
 
