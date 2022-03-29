@@ -44,5 +44,6 @@ fi
 chown -R nobody:users /config
 cp -r /config/stunnel/* /etc/stunnel/
 cp -r /config/nginx/nginx.conf /etc/nginx/nginx.conf
+sleep 1
 
 exec /usr/bin/stunnel /etc/stunnel/stunnel.conf

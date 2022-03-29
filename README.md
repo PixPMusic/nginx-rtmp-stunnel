@@ -20,4 +20,8 @@ Credits:
 
 [nginx-rtmp-module updated](https://github.com/sergey-dryabzhinsky/nginx-rtmp-module) this one has support for dynamic loading and is just generally newer code  
 
-[original nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module) These guys deserve some love too.  
+[original nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module) These guys deserve some love too.
+
+[flitbit/alpine-stunnel](https://github.com/flitbit/alpine-stunnel) Thanks for the nice Dockerfile and examples on how to configure STunnel
+
+[stunnel tutorial for rtmps](https://dev.to/lax/rtmps-relay-with-stunnel-12d3) Thanks for the example STunnel configurations and the very nice explaination on how rtmps proxying is neccesary
